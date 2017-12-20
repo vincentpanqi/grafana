@@ -57,24 +57,24 @@ The Dashboard Folder Page is similar to the Manage Dashboards page and is where 
 - set permissions on the whole folder.
 - set permissions on a single dashboard.
 
-## Dashboard Permissions (Not enabled in Grafana 5.0 alpha)
+## Dashboard Permissions
 
-An Access Control List (ACL) model is used for permissions on Dashboard Folders. An individual user can be assigned permissions on a folder or a Team.
+An Access Control List (ACL) model is used for permissions on Dashboard Folders. A user or a Team can be assigned permissions for a folder or for a single dashboard.
 
-The permissions that can be assigned for a folder are: View, Edit, Admin.
+The permissions that can be assigned for a folder/dashboard are: View, Edit, Admin.
 
 The default is that:
 
 - everyone has access to a folder and that their permissions depend on their user role (Viewer, Editor or Admin).
-- An Admin or Editor can remove the default access for everyone and can then assign a user or team to a Dashboard Folder.
+- An Admin can remove the default access for everyone and can then assign a user or team to a Dashboard Folder.
 - Teams make it easier to assign permissions for multiple users to multiple dashboards.
 
 Other Dashboard Folder rules:
 
 - Users with the Admin and Editor role are allowed to create new Dashboard Folders.
 - Users with the Viewer role are not allowed to create new Dashboard Folders.
-- Editors who are owners and Admins can assign permissions to users or teams for Dashboard Folders.
-- Default permissions can be removed except for the Admin permissions (View, Edit). 
+- Admins can assign permissions to users or teams for Dashboard Folders.
+- Default permissions can be removed but users with the Admin role will always have access.
 
 ### Limiting Permissions on a Folder
 
@@ -86,7 +86,7 @@ To limit permissions on a folder or dashboard:
 
 Remember that users with the Admin role will always have permission to all folders and dashboards.
 
-## Teams (Not enabled in Grafana 5.0 alpha)
+## Teams
 
 Teams is a new concept for Grafana 5.0. A team is a group of users that can be assigned permissions on a dashboard folder or a dashboard.
 
